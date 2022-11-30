@@ -1,0 +1,3 @@
+.darkmode-input:checked div .darkmode-spinner {
+    transform: translateX(60px);
+}

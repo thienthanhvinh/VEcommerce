@@ -1,0 +1,115 @@
+.darkmode-input:checked + div .darkmode-spinner {
+    transform: translateX(60px);
+}
+
+.darkmode-input:checked + div {
+    background-color: rgb(163, 96, 226);
+}
+
+.darkmode-input:checked + div .darkmode-spinner {
+    background-color: white;
+}
+
+
+.product-slider {
+    position: relative;
+}
+
+.slick-initialized .slick-slide {
+    margin: 0px 5px;
+}
+
+@media screen and (min-width: 768px) {  
+    .slick-initialized .slick-slide {
+        margin: 0px 8px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .slick-initialized .slick-slide {
+        margin: 0px 10px;
+    }
+}
+
+.product-slider .slick-prev {
+   
+    position: absolute; 
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.product-slider .slick-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.product-slider button {
+    width: 35px;
+    height: 35px;
+    background-color: #dfe6e9;
+    font-size: 22px;
+}
+
+.rating-slider {
+    position: relative;
+}
+
+
+.rating-slider .slick-prev {
+   
+    position: absolute; 
+    top: 50%;
+    left: -12px;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.rating-slider .slick-next {
+    position: absolute;
+    top: 50%;
+    right: -12px;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+@media screen and (min-width: 1024px) {
+    .rating-slider .slick-next {
+        top: 35%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .rating-slider .slick-prev {
+        top: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .rating-slider .slick-prev {
+        top: 35%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .rating-slider .slick-next {
+        top: 50%;
+    }
+}
+
+.rating-slider button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    background-color: whitesmoke;
+    font-size: 22px;
+    color: #088178;
+}
+
+
+
+

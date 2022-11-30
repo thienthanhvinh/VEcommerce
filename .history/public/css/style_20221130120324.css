@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'Quicksand', sans-serif;
+    }
+}
+
+@layer utilities {
+    .scroll-snap-mandatory {
+        scroll-snap-type: x mandatory;
+    }
+
+    .scroll-snap-always {
+        scroll-snap-stop: always;
+    }
+    
+    .scroll-snap-start {
+        scroll-snap-align: ;
+    }
+}

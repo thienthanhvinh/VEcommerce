@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VEcommerce</title>
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="./plugins/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./plugins/owlcarousel/assets/owl.theme.default.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./plugins/owlcarousel/owl.carousel.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <!-- nav -->
+    <div class="max-w-[1250px] mx-auto mt-2">
+      <div class="flex items-center justify-between pt-7">
+        <div class="">
+          <ion-icon name="accessibility-outline"></ion-icon>
+          <a href="">Logo</a>
+        </div>
+        <ul class="flex items-center gap-x-[45px]">
+          <li><a href="" class="">Trang chủ</a></li>
+          <li><a href="#" class="menu-link">Sản phẩm</a></li>
+          <li><a href="#" class="menu-link">Giới thiệu</a></li>
+          <li><a href="" class="">Tin tức</a></li>
+          <li><a href="" class="">Liên hệ</a></li>
+        </ul>
+
+        <div class="bg-[#f6f6f6] w-[300px] rounded-xl py-[7px] h-[35px]">
+          <form action="">
+            <input
+              type="text"
+              id=""
+              name=""
+              placeholder="Nhập từ khóa tìm kiếm..."
+              class="inline-block border border-none outline-none mr-4 bg-transparent px-5 pr-8"
+            />
+            <button id="btn-search" class="bg-none border-none bg-[#f6f6f6]">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </form>
+        </div>
+        <div class="">
+          <a href="" class="mr-6"
+            ><ion-icon class="text-[21px]" name="person-outline"></ion-icon
+            ><span class="text-[13px]">Tài khoản</span></a
+          >
+          <a href=""
+            ><ion-icon class="text-[21px]" name="cart-outline"></ion-icon></a
+          ><span class="text-[13px]">Giỏ hàng</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="min-w-[1340px] mx-auto mt-[110px]">
+      <!-- header -->
+      <div class="w-[1000px] leading-none ml-[132px] mb-3">
+        <h2 class="text-[80px] text-[#292019] tracking-[-0.02em]">
+          Modern Furniture For Modern Living Style
+        </h2>
+      </div>
+      <div class="ml-[138px] flex items-center">
+        <div class="w-[435px]">
+          <p class="font-light text-justify mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            dicta harum ut unde accusantium, sit animi mollitia hic ipsa
+            ducimus, consequuntur porro?
+          </p>
+          <p class="font-light text-justify mb-[35px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            eos recusandae enim in. Perferendis explicabo recusandae nisi
+            dignissimos numquam repudiandae a, non delectus cupiditate
+            voluptatibus, voluptatum quis magnam.
+          </p>
+          <a href="#" class="py-4 px-6 bg-[#C4A586] text-white text-[12px] mr-8"
+            >Sản phẩm nổi bật</a
+          >
+          <a
+            href="#"
+            class="py-4 px-6 border border-[#C4A586] text-[#C4A586] text-[12px]"
+            >Video giới thiệu</a
+          >
+        </div>
+        <div class="w-[1000px]">
+          <img
+            src="images/header_image.jpg"
+            alt=""
+            class="w-full h-[380px] object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- đối tác -->
+      <div class="mt-[40px]">
+        <p class="text-center text-[#292019] font-bold mb-7">
+          Đối tác của chúng tôi
+        </p>
+        <ul class="flex items-center justify-center">
+          <li class="">
+            <a href="#" class="mx-[50px] text-[#C4A586] font-bold">Samsung</a>
+            <a href="#" class="mx-[50px] text-[#C4A586] font-bold">Xiaomi</a>
+            <a href="#" class="mx-[50px] text-[#C4A586] font-bold">Apple</a>
+            <a href="#" class="mx-[50px] text-[#C4A586] font-bold">Lenovo</a>
+            <a href="#" class="mx-[50px] text-[#C4A586] font-bold">Dell</a>
+            <a href="#" class="mx-[50px] text-[#C4A586] font-bold">Asus</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- sản phẩm theo loại -->
+      <div class="mt-[80px] flex">
+        <div class="w-full flex items-center">
+          <div class="bg-[#FCEFE9] w-6/12 py-8 px-12">
+            <a href="" class="flex items-center">
+              <div>
+                <h2 class="text-[30px] font-bold mb-4">Laptop mới nhất</h2>
+                <p class="text-[18px] font-semibold">Nhấn vào để xem</p>
+              </div>
+              <div class="w-[350px] ml-10">
+                <img
+                  src="./images/laptop_hot.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </a>
+          </div>
+
+
+          
+          <div class="bg-[#FAE2C8] w-6/12 py-8 px-12">
+            <a href="" class="flex items-center">
+              <div>
+                <h2 class="text-[30px] font-bold mb-4">Điện thoại mới nhất</h2>
+                <p class="text-[18px] font-semibold">Nhấn vào để xem</p>
+              </div>
+              <div class="w-[350px]">
+                <img
+                  src="./images/laptop_hot.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- danh sách sản phẩm -->
+    <div class="max-w-[1250px] mx-auto mt-[70px]">
+      <h2 class="text-[#3D3D3F] text-[30px] font-bold mb-10">
+        Sản phẩm nổi bật
+      </h2>
+      <div class="flex gap-8">
+        <div
+          class="bg-[#FFF4E8] relative px-10 h-[200px] rounded-xl text-center"
+        >
+          <a href="#" class="w-full h-full">
+            <div class="text-center mb-8">
+              <button
+                href=""
+                class="inline-block text-[12px] bg-[#D9AB82] text-white rounded-[40px] px-3 py-2 absolute top-[-15px] left-[95px]"
+              >
+                Thêm giỏ hàng
+              </button>
+            </div>
+            <p class="text-center text-[20px] font-bold mb-[15px]">
+              Laptop Dell Inspirion
+            </p>
+            <p class="ml-[10px] text-[17px] inline-block mr-5">13.000.000đ</p>
+            <span class="text-[#A9A7A6] text-[14px] line-through"
+              >15.000.000đ</span
+            >
+            <div class="w-[220px] mt-4">
+              <img
+                src="./images/laptop_hot.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="bg-[#FFF4E8] relative px-10 h-[200px] rounded-xl text-center"
+        >
+          <a href="#" class="w-full h-full">
+            <div class="text-center mb-8">
+              <button
+                href=""
+                class="inline-block text-[12px] bg-[#D9AB82] text-white rounded-[40px] px-3 py-2 absolute top-[-15px] left-[95px]"
+              >
+                Thêm giỏ hàng
+              </button>
+            </div>
+            <p class="text-center text-[20px] font-bold mb-[15px]">
+              Laptop Dell Inspirion
+            </p>
+            <p class="ml-[10px] text-[17px] inline-block mr-5">13.000.000đ</p>
+            <span class="text-[#A9A7A6] text-[14px] line-through"
+              >15.000.000đ</span
+            >
+            <div class="w-[220px] mt-4">
+              <img
+                src="./images/laptop_hot.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="bg-[#FFF4E8] relative px-10 h-[200px] rounded-xl text-center"
+        >
+          <a href="#" class="w-full h-full">
+            <div class="text-center mb-8">
+              <button
+                href=""
+                class="inline-block text-[12px] bg-[#D9AB82] text-white rounded-[40px] px-3 py-2 absolute top-[-15px] left-[95px]"
+              >
+                Thêm giỏ hàng
+              </button>
+            </div>
+            <p class="text-center text-[20px] font-bold mb-[15px]">
+              Laptop Dell Inspirion
+            </p>
+            <p class="ml-[10px] text-[17px] inline-block mr-5">13.000.000đ</p>
+            <span class="text-[#A9A7A6] text-[14px] line-through"
+              >15.000.000đ</span
+            >
+            <div class="w-[220px] mt-4">
+              <img
+                src="./images/laptop_hot.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="bg-[#FFF4E8] relative px-10 h-[200px] rounded-xl text-center"
+        >
+          <a href="#" class="w-full h-full">
+            <div class="text-center mb-8">
+              <button
+                href=""
+                class="inline-block text-[12px] bg-[#D9AB82] text-white rounded-[40px] px-3 py-2 absolute top-[-15px] left-[95px]"
+              >
+                Thêm giỏ hàng
+              </button>
+            </div>
+            <p class="text-center text-[20px] font-bold mb-[15px]">
+              Laptop Dell Inspirion
+            </p>
+            <p class="ml-[10px] text-[17px] inline-block mr-5">13.000.000đ</p>
+            <span class="text-[#A9A7A6] text-[14px] line-through"
+              >15.000.000đ</span
+            >
+            <div class="w-[220px] mt-4">
+              <img
+                src="./images/laptop_hot.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Danh sách điện thoại -->
+      <div class="mt-[140px]">
+        <h2 class="text-[#3D3D3F] text-[30px] font-bold mb-10">Điện thoại</h2>
+        <div class="flex gap-8">
+          <div
+            class="bg-[#FFF4E8] relative px-10 h-[200px] rounded-xl text-center"
+          >
+            <a href="#" class="w-full h-full">
+              <div class="text-center mb-8">
+                <button
+                  href=""
+                  class="inline-block text-[12px] bg-[#D9AB82] text-white rounded-[40px] px-3 py-2 absolute top-[-15px] left-[95px]"
+                >
+                  Thêm giỏ hàng
+                </button>
+              </div>
+              <p class="text-center text-[20px] font-bold mb-[15px]">
+                Laptop Dell Inspirion
+              </p>
+              <p class="ml-[10px] text-[17px] inline-block mr-5">13.000.000đ</p>
+              <span class="text-[#A9A7A6] text-[14px] line-through"
+                >15.000.000đ</span
+              >
+              <div class="w-[220px] mt-4">
+                <img
+                  src="./images/laptop_hot.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="bg-[#FFF4E8] relative px-10 h-[200px] rounded-xl text-center"
+          >
+            <a href="#" class="w-full h-full">
+              <div class="text-center mb-8">
+                <button
+                  href=""
+                  class="inline-block text-[12px] bg-[#D9AB82] text-white rounded-[40px] px-3 py-2 absolute top-[-15px] left-[95px]"
+                >
+                  Thêm giỏ hàng
+                </button>
+              </div>
+              <p class="text-center text-[20px] font-bold mb-[15px]">
+                Laptop Dell Inspirion
+              </p>
+              <p class="ml-[10px] text-[17px] inline-block mr-5">13.000.000đ</p>
+              <span class="text-[#A9A7A6] text-[14px] line-through"
+                >15.000.000đ</span
+              >
+              <div class="w-[220px] mt-4">
+                <img
+                  src="./images/laptop_hot.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="bg-[#FFF4E8] relative px-10 h-[200px] rounded-xl text-center"
+          >
+            <a href="#" class="w-full h-full">
+              <div class="text-center mb-8">
+                <button
+                  href=""
+                  class="inline-block text-[12px] bg-[#D9AB82] text-white rounded-[40px] px-3 py-2 absolute top-[-15px] left-[95px]"
+                >
+                  Thêm giỏ hàng
+                </button>
+              </div>
+              <p class="text-center text-[20px] font-bold mb-[15px]">
+                Laptop Dell Inspirion
+              </p>
+              <p class="ml-[10px] text-[17px] inline-block mr-5">13.000.000đ</p>
+              <span class="text-[#A9A7A6] text-[14px] line-through"
+                >15.000.000đ</span
+              >
+              <div class="w-[220px] mt-4">
+                <img
+                  src="./images/laptop_hot.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="bg-[#FFF4E8] relative px-10 h-[200px] rounded-xl text-center"
+          >
+            <a href="#" class="w-full h-full">
+              <div class="text-center mb-8">
+                <button
+                  href=""
+                  class="inline-block text-[12px] bg-[#D9AB82] text-white rounded-[40px] px-3 py-2 absolute top-[-15px] left-[95px]"
+                >
+                  Thêm giỏ hàng
+                </button>
+              </div>
+              <p class="text-center text-[20px] font-bold mb-[15px]">
+                Laptop Dell Inspirion
+              </p>
+              <p class="ml-[10px] text-[17px] inline-block mr-5">13.000.000đ</p>
+              <span class="text-[#A9A7A6] text-[14px] line-through"
+                >15.000.000đ</span
+              >
+              <div class="w-[220px] mt-4">
+                <img
+                  src="./images/laptop_hot.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Danh sách laptop -->
+      <div class="mt-[140px]">
+        <h2 class="text-[#3D3D3F] text-[30px] font-bold mb-10">Laptop</h2>
+        <div class="flex gap-8">
+          <div
+            class="bg-[#FFF4E8] relative px-10 h-[200px] rounded-xl text-center"
+          >
+            <a href="#" class="w-full h-full">
+              <div class="text-center mb-8">
+                <button
+                  href=""
+                  class="inline-block text-[12px] bg-[#D9AB82] text-white rounded-[40px] px-3 py-2 absolute top-[-15px] left-[95px]"
+                >
+                  Thêm giỏ hàng
+                </button>
+              </div>
+              <p class="text-center text-[20px] font-bold mb-[15px]">
+                Laptop Dell Inspirion
+              </p>
+              <p class="ml-[10px] text-[17px] inline-block mr-5">13.000.000đ</p>
+              <span class="text-[#A9A7A6] text-[14px] line-through"
+                >15.000.000đ</span
+              >
+              <div class="w-[220px] mt-4">
+                <img
+                  src="./images/laptop_hot.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="bg-[#FFF4E8] relative px-10 h-[200px] rounded-xl text-center"
+          >
+            <a href="#" class="w-full h-full">
+              <div class="text-center mb-8">
+                <button
+                  href=""
+                  class="inline-block text-[12px] bg-[#D9AB82] text-white rounded-[40px] px-3 py-2 absolute top-[-15px] left-[95px]"
+                >
+                  Thêm giỏ hàng
+                </button>
+              </div>
+              <p class="text-center text-[20px] font-bold mb-[15px]">
+                Laptop Dell Inspirion
+              </p>
+              <p class="ml-[10px] text-[17px] inline-block mr-5">13.000.000đ</p>
+              <span class="text-[#A9A7A6] text-[14px] line-through"
+                >15.000.000đ</span
+              >
+              <div class="w-[220px] mt-4">
+                <img
+                  src="./images/laptop_hot.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="bg-[#FFF4E8] relative px-10 h-[200px] rounded-xl text-center"
+          >
+            <a href="#" class="w-full h-full">
+              <div class="text-center mb-8">
+                <button
+                  href=""
+                  class="inline-block text-[12px] bg-[#D9AB82] text-white rounded-[40px] px-3 py-2 absolute top-[-15px] left-[95px]"
+                >
+                  Thêm giỏ hàng
+                </button>
+              </div>
+              <p class="text-center text-[20px] font-bold mb-[15px]">
+                Laptop Dell Inspirion
+              </p>
+              <p class="ml-[10px] text-[17px] inline-block mr-5">13.000.000đ</p>
+              <span class="text-[#A9A7A6] text-[14px] line-through"
+                >15.000.000đ</span
+              >
+              <div class="w-[220px] mt-4">
+                <img
+                  src="./images/laptop_hot.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div
+            class="bg-[#FFF4E8] relative px-10 h-[200px] rounded-xl text-center"
+          >
+            <a href="#" class="w-full h-full">
+              <div class="text-center mb-8">
+                <button
+                  href=""
+                  class="inline-block text-[12px] bg-[#D9AB82] text-white rounded-[40px] px-3 py-2 absolute top-[-15px] left-[95px]"
+                >
+                  Thêm giỏ hàng
+                </button>
+              </div>
+              <p class="text-center text-[20px] font-bold mb-[15px]">
+                Laptop Dell Inspirion
+              </p>
+              <p class="ml-[10px] text-[17px] inline-block mr-5">13.000.000đ</p>
+              <span class="text-[#A9A7A6] text-[14px] line-through"
+                >15.000.000đ</span
+              >
+              <div class="w-[220px] mt-4">
+                <img
+                  src="./images/laptop_hot.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Đánh giá -->
+      <div class="max-w-[1000px] mx-auto mt-[200px] flex">
+        <div class="w-[500px] h-[500px]">
+          <img src="./images/woman_review.png" alt="" class="w-[90%] h-full object-cover rounded-xl">
+        </div>
+        <div class="w-[550px]">
+          <h1 class="text-[#3D3D3F] font-bold text-[40px] leading-[52px] mb-7 text-justify">Cùng xem những người khác nói gì về chúng tôi</h1>
+          <p class="text-[#72696A] text-[17px] text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quod amet ut, minima provident et tempore asperiores ratione doloremque maiores at sequi rerum sunt perferendis soluta pariatur modi exercitationem. Voluptas.</p>
+          <div class="flex items-center justify-around mt-6">
+            <p class="text-[#3D3D3F] text-[17px]">Trần Văn A</p>
+            <div>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <p class="text-[#A9A7A6] text-[14px]">24 tháng 10 năm 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          lazyload: true,
+          margin: 10,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.darkmode-input:checked + div .darkmode-spinner {
+    transform: translateX(60px);
+}
+
+.darkmode-input:checked + div {
+    background-color: rgb(163, 96, 226);
+}
+
+.darkmode-input:checked + div .darkmode-spinner {
+    background-color: white;
+}
+
+
+.slick-initialized .slick-slide {
+    margin: 0px ;
+}

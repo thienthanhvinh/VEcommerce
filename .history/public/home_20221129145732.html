@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VEcommerce</title>
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./plugins/owlcarousel/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./plugins/owlcarousel/assets/owl.theme.default.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./plugins/owlcarousel/owl.carousel.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="w-full dark:bg-[#18191A]">
+      <div class="w-full bg-header-color dark:bg-[#242426]">
+        <!-- menu -->
+        <div
+          class="w-[90%] mx-auto px-5 mt-2 flex items-center justify-between gap-x-2 py-5 text-[#07484A] dark:text-[#e4e6eb]"
+        >
+          <div class="">
+            <ion-icon name="accessibility-outline"></ion-icon>
+            <a href="">Logo</a>
+          </div>
+          <ul
+            class="flex items-center gap-x-[45px] font-semibold"
+          >
+            <li><a href="" class="">Trang chủ</a></li>
+            <li><a href="#" class="menu-link">Sản phẩm</a></li>
+            <li><a href="#" class="menu-link">Giới thiệu</a></li>
+            <li><a href="" class="">Tin tức</a></li>
+            <li><a href="" class="">Liên hệ</a></li>
+          </ul>
+
+          <div class="bg-[#f6f6f6] dark:bg-[#4E4F50] rounded-xl py-[7px] h-[35px] px-4">
+            <form action="">
+              <input
+                type="text"
+                id=""
+                name=""
+                placeholder="Nhập từ khóa tìm kiếm..."
+                class="inline-block border border-none outline-none mr-4 bg-transparent"
+              />
+              <button id="btn-search" class="bg-none border-none bg-inherit">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </form>
+          </div>
+          <div class="flex items-center gap-x-5">
+            <div class="flex items-center">
+              <a href="" class=""
+                ><ion-icon class="text-[21px]" name="person-outline"></ion-icon
+                ><span class="text-[13px]">Tài khoản</span></a
+              >
+            </div>
+
+            <div>
+              <a href=""
+                ><ion-icon class="text-[21px]" name="cart-outline"></ion-icon>
+                <span class="text-[13px]">Giỏ hàng</span></a
+              >
+            </div>
+            <div>
+              <label for="toggle" class="cursor-pointer toggle-switch inline-block toggle-switch">
+                <input
+                  type="checkbox"
+                  name=""
+                  id="toggle"
+                  class="darkmode-input hidden"
+                />
+                <div
+                  class="w-[100px] h-10 border border-[#ccc] rounded-full fixed right-5 bottom-10 z-50 p-[5px]"
+                >
+                  <div
+                    class="w-7 h-7 rounded-full bg-[#ccc] darkmode-spinner transition-all duration-500"
+                  ></div>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- end-menu -->
+
+        <!-- intro -->
+        <div class="w-[90%] mx-auto px-5 pt-[30px]">
+          <!-- header -->
+          <div class="lg:w-[60%] md:w-[70%] leading-none">
+            <h2
+              class="lg:text-[60px] md:text-[40px] text-[30px] text-[#07484A] dark:text-[#e4e6eb] tracking-[-0.02em] font-semibold"
+            >
+              Modern E-commerce For Modern Shopping Style
+            </h2>
+          </div>
+          <div class="flex items-center">
+            <div class="lg:w-[40%] md:w-[65%]">
+              <p class="text-justify mb-5 dark:text-[#e4e6eb]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                dicta harum ut unde accusantium, sit animi mollitia hic ipsa
+                ducimus, consequuntur porro?
+              </p>
+              <p class="text-justify mb-[35px] dark:text-[#e4e6eb]">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates eos recusandae enim in. Perferendis explicabo
+                recusandae nisi dignissimos numquam repudiandae a, non delectus
+                cupiditate voluptatibus, voluptatum quis magnam.
+              </p>
+              <a
+                href="#"
+                class="py-4 px-6 bg-four-color dark:bg-[#393A3B] dark:hover:bg-[#18191A] hover:bg-secondary-color text-white font-bold text-[12px] mr-8"
+                >Sản phẩm nổi bật</a
+              >
+              <a
+                href="#"
+                class="py-4 px-6 border border-third-color hover:bg-four-color dark:bg-[#292929] dark:hover:bg-[#18191A] dark:border-[#1e272e] hover:text-white text-[12px] font-semibold dark:text-[#e4e6eb]"
+                >Video giới thiệu</a
+              >
+            </div>
+            <div class="lg:w-[60%] md:w-[35%]">
+              <img
+                src="images/header_image-removebg.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- đối tác -->
+      <div class="pt-[40px]">
+        <p class="text-center text-[#292019]  font-bold mb-7 text-[18px] dark:text-[#e4e6eb]">
+          Đối tác của chúng tôi
+        </p>
+        <ul class="flex items-center justify-center text-main-color dark:text-[#e4e6eb] dark:font-light font-bold ">
+          <li class="">
+            <a href="#" class="mx-[50px]">Samsung</a>
+            <a href="#" class="mx-[50px]">Xiaomi</a>
+            <a href="#" class="mx-[50px]">Apple</a>
+            <a href="#" class="mx-[50px]">Lenovo</a>
+            <a href="#" class="mx-[50px]">Dell</a>
+            <a href="#" class="mx-[50px]">Asus</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- sản phẩm theo loại -->
+      <div class="pt-[80px] flex">
+        <div class="w-full flex items-center">
+          <div
+            class="bg-main-color dark:bg-[#2d3436] dark:text-[#e4e6eb] w-[50%] py-8 px-12 h-[300px] flex items-center"
+          >
+            <div class="w-[50%]">
+              <h2 class="text-[30px] font-bold mb-4">Laptop mới nhất</h2>
+              <a href="" class="text-[18px] font-semibold"
+                >Nhấn vào đây để xem</a
+              >
+            </div>
+            <div class="w-[50%]">
+              <img
+                src="./images/laptop_hot.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-secondary-color dark:bg-[#3d3d3d] dark:text-[#e4e6eb] w-[50%] py-8 px-12 h-[300px] flex items-center"
+          >
+            <div class="w-[50%]">
+              <h2 class="text-[30px] font-bold mb-4">Điện thoại mới nhất</h2>
+              <a href="" class="text-[18px] font-semibold"
+                >Nhấn vào đây để xem</a
+              >
+            </div>
+            <div class="w-[50%]">
+              <img
+                src="./images/phone_hot.png"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- danh sách sản phẩm -->
+      <div class="w-[90%] mx-auto px-5 mt-[80px]">
+        <h2 class="text-[#3D3D3F] dark:text-[#e4e6eb] dark:font-medium text-[30px] font-bold mb-8 text-center">
+          Sản phẩm nổi bật
+        </h2>
+        <div class="product-slider grid grid-cols-5 gap-x-6">
+          <div class="shadow-md rounded-lg border border-gray-200 dark:border-gray-400">
+            <a href="">
+              <div
+                class="w-[90%] mt-4 rounded-xl bg-[#EFF5F5] dark:bg-[#4e4f50] mx-auto relative px-8 py-6"
+              >
+                <img
+                  src="./images/3_229-removebg-preview.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="w-[90%] mx-auto pt-2">
+                <p class="overflow-x-hidden font-bold text-[17px] dark:text-[#e4e6eb]">
+                  Iphone 14 Promax
+                </p>
+
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="text-yellow-400">
+                      <!-- <i class="fas fa-star rate-color"></i> -->
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p
+                      class="inline-block text-main-color dark:text-[#e4e6eb] dark:font-light font-bold text-[15px] mr-3"
+                    >
+                      200.000đ
+                    </p>
+                    <span class="text-[#72696A] text-[13px] line-through"
+                      >400000đ</span
+                    >
+                  </div>
+                  <a href="" class="inline-block">
+                    <ion-icon
+                      name="cart-outline"
+                      class="text-[20px] text-four-color bg-[#e8f6ea] dark:text-[#e4e6eb] dark:bg-[#4e4f50] dark:hover:bg-[#18191A] dark:font-bold hover:bg-main-color hover:text-white px-3 py-3 rounded-full border border-[#cce7d0]"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-md rounded-lg border border-gray-200 dark:border-gray-400">
+            <a href="">
+              <div
+                class="w-[90%] mt-4 rounded-xl bg-[#EFF5F5] dark:bg-[#4e4f50] mx-auto relative px-8 py-6"
+              >
+                <img
+                  src="./images/3_229-removebg-preview.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="w-[90%] mx-auto pt-2">
+                <p class="overflow-x-hidden font-bold text-[17px] dark:text-[#e4e6eb]">
+                  Iphone 14 Promax
+                </p>
+
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="text-yellow-400">
+                      <!-- <i class="fas fa-star rate-color"></i> -->
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p
+                      class="inline-block text-main-color dark:text-[#e4e6eb] dark:font-light font-bold text-[15px] mr-3"
+                    >
+                      200.000đ
+                    </p>
+                    <span class="text-[#72696A] text-[13px] line-through"
+                      >400000đ</span
+                    >
+                  </div>
+                  <a href="" class="inline-block">
+                    <ion-icon
+                      name="cart-outline"
+                      class="text-[20px] text-four-color bg-[#e8f6ea] dark:text-[#e4e6eb] dark:bg-[#4e4f50] dark:hover:bg-[#18191A] dark:font-bold hover:bg-main-color hover:text-white px-3 py-3 rounded-full border border-[#cce7d0]"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-md rounded-lg border border-gray-200 dark:border-gray-400">
+            <a href="">
+              <div
+                class="w-[90%] mt-4 rounded-xl bg-[#EFF5F5] dark:bg-[#4e4f50] mx-auto relative px-8 py-6"
+              >
+                <img
+                  src="./images/3_229-removebg-preview.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="w-[90%] mx-auto pt-2">
+                <p class="overflow-x-hidden font-bold text-[17px] dark:text-[#e4e6eb]">
+                  Iphone 14 Promax
+                </p>
+
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="text-yellow-400">
+                      <!-- <i class="fas fa-star rate-color"></i> -->
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p
+                      class="inline-block text-main-color dark:text-[#e4e6eb] dark:font-light font-bold text-[15px] mr-3"
+                    >
+                      200.000đ
+                    </p>
+                    <span class="text-[#72696A] text-[13px] line-through"
+                      >400000đ</span
+                    >
+                  </div>
+                  <a href="" class="inline-block">
+                    <ion-icon
+                      name="cart-outline"
+                      class="text-[20px] text-four-color bg-[#e8f6ea] dark:text-[#e4e6eb] dark:bg-[#4e4f50] dark:hover:bg-[#18191A] dark:font-bold hover:bg-main-color hover:text-white px-3 py-3 rounded-full border border-[#cce7d0]"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-md rounded-lg border border-gray-200 dark:border-gray-400">
+            <a href="">
+              <div
+                class="w-[90%] mt-4 rounded-xl bg-[#EFF5F5] dark:bg-[#4e4f50] mx-auto relative px-8 py-6"
+              >
+                <img
+                  src="./images/3_229-removebg-preview.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="w-[90%] mx-auto pt-2">
+                <p class="overflow-x-hidden font-bold text-[17px] dark:text-[#e4e6eb]">
+                  Iphone 14 Promax
+                </p>
+
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="text-yellow-400">
+                      <!-- <i class="fas fa-star rate-color"></i> -->
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p
+                      class="inline-block text-main-color dark:text-[#e4e6eb] dark:font-light font-bold text-[15px] mr-3"
+                    >
+                      200.000đ
+                    </p>
+                    <span class="text-[#72696A] text-[13px] line-through"
+                      >400000đ</span
+                    >
+                  </div>
+                  <a href="" class="inline-block">
+                    <ion-icon
+                      name="cart-outline"
+                      class="text-[20px] text-four-color bg-[#e8f6ea] dark:text-[#e4e6eb] dark:bg-[#4e4f50] dark:hover:bg-[#18191A] dark:font-bold hover:bg-main-color hover:text-white px-3 py-3 rounded-full border border-[#cce7d0]"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-md rounded-lg border border-gray-200 dark:border-gray-400">
+            <a href="">
+              <div
+                class="w-[90%] mt-4 rounded-xl bg-[#EFF5F5] dark:bg-[#4e4f50] mx-auto relative px-8 py-6"
+              >
+                <img
+                  src="./images/3_229-removebg-preview.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="w-[90%] mx-auto pt-2">
+                <p class="overflow-x-hidden font-bold text-[17px] dark:text-[#e4e6eb]">
+                  Iphone 14 Promax
+                </p>
+
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="text-yellow-400">
+                      <!-- <i class="fas fa-star rate-color"></i> -->
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p
+                      class="inline-block text-main-color dark:text-[#e4e6eb] dark:font-light font-bold text-[15px] mr-3"
+                    >
+                      200.000đ
+                    </p>
+                    <span class="text-[#72696A] text-[13px] line-through"
+                      >400000đ</span
+                    >
+                  </div>
+                  <a href="" class="inline-block">
+                    <ion-icon
+                      name="cart-outline"
+                      class="text-[20px] text-four-color bg-[#e8f6ea] dark:text-[#e4e6eb] dark:bg-[#4e4f50] dark:hover:bg-[#18191A] dark:font-bold hover:bg-main-color hover:text-white px-3 py-3 rounded-full border border-[#cce7d0]"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="shadow-md rounded-lg border border-gray-200 dark:border-gray-400">
+            <a href="">
+              <div
+                class="w-[90%] mt-4 rounded-xl bg-[#EFF5F5] dark:bg-[#4e4f50] mx-auto relative px-8 py-6"
+              >
+                <img
+                  src="./images/3_229-removebg-preview.png"
+                  alt=""
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div class="w-[90%] mx-auto pt-2">
+                <p class="overflow-x-hidden font-bold text-[17px] dark:text-[#e4e6eb]">
+                  Iphone 14 Promax
+                </p>
+
+                <div class="flex items-center justify-between">
+                  <div>
+                    <div class="text-yellow-400">
+                      <!-- <i class="fas fa-star rate-color"></i> -->
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p
+                      class="inline-block text-main-color dark:text-[#e4e6eb] dark:font-light font-bold text-[15px] mr-3"
+                    >
+                      200.000đ
+                    </p>
+                    <span class="text-[#72696A] text-[13px] line-through"
+                      >400000đ</span
+                    >
+                  </div>
+                  <a href="" class="inline-block">
+                    <ion-icon
+                      name="cart-outline"
+                      class="text-[20px] text-four-color bg-[#e8f6ea] dark:text-[#e4e6eb] dark:bg-[#4e4f50] dark:hover:bg-[#18191A] dark:font-bold hover:bg-main-color hover:text-white px-3 py-3 rounded-full border border-[#cce7d0]"
+                    ></ion-icon>
+                  </a>
+                </div>
+              </div>
+            </a>
+          </div>    
+         
+        </div>
+
+        <!-- điện thoại -->
+        <div class="mt-[80px]">
+          <h2 class="text-[#3D3D3F] dark:text-[#e4e6eb] dark:font-medium  text-[30px] font-bold mb-8 text-center">
+            Điện thoại
+          </h2>
+          <div class="grid grid-cols-6 gap-x-6">
+            <div class="shadow-md rounded-lg border border-gray-100">
+              <a href="">
+                <div
+                  class="w-[90%] mt-4 rounded-xl bg-[#EFF5F5] mx-auto relative px-8 py-6"
+                >
+                  <img
+                    src="./images/3_229-removebg-preview.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="w-[90%] mx-auto pt-2">
+                  <p class="overflow-x-hidden font-bold text-[17px]">
+                    Iphone 14 Promax
+                  </p>
+
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <div class="text-yellow-400">
+                        <!-- <i class="fas fa-star rate-color"></i> -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p
+                        class="inline-block text-main-color font-bold text-[15px] mr-3"
+                      >
+                        200.000đ
+                      </p>
+                      <span class="text-[#72696A] text-[13px] line-through"
+                        >400000đ</span
+                      >
+                    </div>
+                    <a href="" class="inline-block">
+                      <ion-icon
+                        name="cart-outline"
+                        class="text-[20px] text-four-color bg-[#e8f6ea] px-3 py-3 rounded-full border border-[#cce7d0]"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="shadow-md rounded-lg border border-gray-100">
+              <a href="">
+                <div
+                  class="w-[90%] mt-4 rounded-xl bg-[#EFF5F5] mx-auto relative px-8 py-6"
+                >
+                  <img
+                    src="./images/3_229-removebg-preview.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="w-[90%] mx-auto pt-2">
+                  <p class="overflow-x-hidden font-bold text-[17px]">
+                    Iphone 14 Promax
+                  </p>
+
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <div class="text-yellow-400">
+                        <!-- <i class="fas fa-star rate-color"></i> -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p
+                        class="inline-block text-main-color font-bold text-[15px] mr-3"
+                      >
+                        200.000đ
+                      </p>
+                      <span class="text-[#72696A] text-[13px] line-through"
+                        >400000đ</span
+                      >
+                    </div>
+                    <a href="" class="inline-block">
+                      <ion-icon
+                        name="cart-outline"
+                        class="text-[20px] text-four-color bg-[#e8f6ea] px-3 py-3 rounded-full border border-[#cce7d0]"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="shadow-md rounded-lg border border-gray-100">
+              <a href="">
+                <div
+                  class="w-[90%] mt-4 rounded-xl bg-[#EFF5F5] mx-auto relative px-8 py-6"
+                >
+                  <img
+                    src="./images/3_229-removebg-preview.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="w-[90%] mx-auto pt-2">
+                  <p class="overflow-x-hidden font-bold text-[17px]">
+                    Iphone 14 Promax
+                  </p>
+
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <div class="text-yellow-400">
+                        <!-- <i class="fas fa-star rate-color"></i> -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p
+                        class="inline-block text-main-color font-bold text-[15px] mr-3"
+                      >
+                        200.000đ
+                      </p>
+                      <span class="text-[#72696A] text-[13px] line-through"
+                        >400000đ</span
+                      >
+                    </div>
+                    <a href="" class="inline-block">
+                      <ion-icon
+                        name="cart-outline"
+                        class="text-[20px] text-four-color bg-[#e8f6ea] px-3 py-3 rounded-full border border-[#cce7d0]"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="shadow-md rounded-lg border border-gray-100">
+              <a href="">
+                <div
+                  class="w-[90%] mt-4 rounded-xl bg-[#EFF5F5] mx-auto relative px-8 py-6"
+                >
+                  <img
+                    src="./images/3_229-removebg-preview.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="w-[90%] mx-auto pt-2">
+                  <p class="overflow-x-hidden font-bold text-[17px]">
+                    Iphone 14 Promax
+                  </p>
+
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <div class="text-yellow-400">
+                        <!-- <i class="fas fa-star rate-color"></i> -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p
+                        class="inline-block text-main-color font-bold text-[15px] mr-3"
+                      >
+                        200.000đ
+                      </p>
+                      <span class="text-[#72696A] text-[13px] line-through"
+                        >400000đ</span
+                      >
+                    </div>
+                    <a href="" class="inline-block">
+                      <ion-icon
+                        name="cart-outline"
+                        class="text-[20px] text-four-color bg-[#e8f6ea] px-3 py-3 rounded-full border border-[#cce7d0]"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="shadow-md rounded-lg border border-gray-100">
+              <a href="">
+                <div
+                  class="w-[90%] mt-4 rounded-xl bg-[#EFF5F5] mx-auto relative px-8 py-6"
+                >
+                  <img
+                    src="./images/3_229-removebg-preview.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="w-[90%] mx-auto pt-2">
+                  <p class="overflow-x-hidden font-bold text-[17px]">
+                    Iphone 14 Promax
+                  </p>
+
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <div class="text-yellow-400">
+                        <!-- <i class="fas fa-star rate-color"></i> -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p
+                        class="inline-block text-main-color font-bold text-[15px] mr-3"
+                      >
+                        200.000đ
+                      </p>
+                      <span class="text-[#72696A] text-[13px] line-through"
+                        >400000đ</span
+                      >
+                    </div>
+                    <a href="" class="inline-block">
+                      <ion-icon
+                        name="cart-outline"
+                        class="text-[20px] text-four-color bg-[#e8f6ea] px-3 py-3 rounded-full border border-[#cce7d0]"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="shadow-md rounded-lg border border-gray-100">
+              <a href="">
+                <div
+                  class="w-[90%] mt-4 rounded-xl bg-[#EFF5F5] mx-auto relative px-8 py-6"
+                >
+                  <img
+                    src="./images/3_229-removebg-preview.png"
+                    alt=""
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="w-[90%] mx-auto pt-2">
+                  <p class="overflow-x-hidden font-bold text-[17px]">
+                    Iphone 14 Promax
+                  </p>
+
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <div class="text-yellow-400">
+                        <!-- <i class="fas fa-star rate-color"></i> -->
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p
+                        class="inline-block text-main-color font-bold text-[15px] mr-3"
+                      >
+                        200.000đ
+                      </p>
+                      <span class="text-[#72696A] text-[13px] line-through"
+                        >400000đ</span
+                      >
+                    </div>
+                    <a href="" class="inline-block">
+                      <ion-icon
+                        name="cart-outline"
+                        class="text-[20px] text-four-color bg-[#e8f6ea] px-3 py-3 rounded-full border border-[#cce7d0]"
+                      ></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Đánh giá -->
+      <div class="w-[90%] mx-auto px-40 mt-[120px] flex gap-x-12">
+        <div class="w-[55%] pt-8">
+          <h1
+            class="text-[#3D3D3F] dark:text-[#e4e6eb] font-bold text-[40px] leading-[52px] mb-7 text-justify"
+          >
+            Cùng xem những người khác nói gì về chúng tôi
+          </h1>
+          <p class="text-[#72696A] dark:text-[#e4e6eb] text-[17px] text-justify">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quod
+            amet ut, minima provident et tempore asperiores ratione doloremque
+            maiores at sequi rerum sunt perferendis soluta pariatur modi
+            exercitationem. Voluptas.
+          </p>
+          <div class="flex items-center justify-around mt-6">
+            <p class="text-[#3D3D3F]  dark:text-[#e4e6eb] text-[17px]">Trần Văn A</p>
+            <div>
+              <div class="text-yellow-400">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+
+              <p class="text-[#A9A7A6] text-[14px]">24 tháng 10 năm 2022</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[45%] h-[500px]">
+          <div class="rating-slider w-[90%]">
+            <img
+              src="./images/woman_review.png"
+              alt=""
+              class="w-full h-full object-cover rounded-xl"
+            />
+            <img
+              src="./images/woman_review.png"
+              alt=""
+              class="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Dịch vụ -->
+      <div class="w-[90%] mx-auto px-5 mt-[70px]">
+        <h2 class="text-[#3D3D3F] dark:text-[#e4e6eb] text-[30px] font-bold mb-6 text-center">
+          Dịch vụ của chúng tôi
+        </h2>
+        <div class="grid grid-cols-4 gap-x-6 pt-5">
+          <div class="border border-gray-200 shadow-lg px-4 py-4 rounded-xl">
+            <div class="text-center text-[30px] mb-1">
+              <i class="fa-solid fa-truck text-four-color dark:text-[#d2d5d7]"></i>
+            </div>
+            <div class="text-center text-[#192a56] dark:text-[#e4e6eb]">
+              <h3 class=" font-bold text-[17px]">
+                Giao hàng nhanh chóng
+              </h3>
+              <p class="text-[15px]">
+                Đơn hàng sẽ được chuyển đến tay bạn nhanh chóng
+              </p>
+            </div>
+          </div>
+          <div class="border border-gray-200 shadow-lg px-4 py-4 rounded-xl">
+            <div class="text-center text-[30px] mb-1">
+              <i class="fa-solid fa-phone-volume text-four-color dark:text-[#d2d5d7]"></i>
+            </div>
+            <div class="text-center text-[#192a56] dark:text-[#e4e6eb]">
+              <h3 class="font-bold text-[17px]">Tư vấn 24/7</h3>
+              <p class="text-[15px]">
+                Nhân viên tư vấn hỗ trợ bạn thông qua điện thoại hoặc tin nhắn
+              </p>
+            </div>
+          </div>
+          <div class="border border-gray-200 shadow-lg px-4 py-4 rounded-xl">
+            <div class="text-center text-[30px] mb-1">
+              <i class="fa-regular fa-credit-card text-four-color dark:text-[#d2d5d7]"></i>
+            </div>
+            <div class="text-center text-[#192a56] dark:text-[#e4e6eb]">
+              <h3 class="font-bold text-[17px]">
+                Thanh toán nhanh chóng
+              </h3>
+              <p class="text-[15px]">
+                Hỗ trợ thanh toán bằng nhiều hình thức và thuận tiện
+              </p>
+            </div>
+          </div>
+          <div class="border border-gray-200 shadow-lg px-4 py-4 rounded-xl">
+            <div class="text-center text-[30px] mb-1">
+              <i class="fa-solid fa-cart-shopping text-four-color dark:text-[#d2d5d7]"></i>
+            </div>
+            <div class="text-center text-[#192a56] dark:text-[#e4e6eb]">
+              <h3 class="font-bold text-[17px]">
+                Đặt hàng online
+              </h3>
+              <p class="text-[15px]">
+                Bạn có thể đặt hàng một cách dễ dàng mà không cần đăng nhập
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="w-full bg-four-color mt-[80px] dark:bg-[#242426]">
+        <div
+          class="w-[90%] mx-auto px-5 py-8 grid grid-cols-4 text-white dark:text-[#e4e6eb] gap-x-20"
+        >
+          <div>
+            <h3 class="text-[19px] pb-2">VEcommerce</h3>
+            <p class="text-justify text-[14px] leading-relaxed">
+              VEcommerce luôn là nhà cung cấp những sản phẩm chính hãng và có
+              thông tin rõ ràng. Chúng tôi hân hạnh được mang đến những trải
+              nghiệm tốt nhất cho khách hàng khi mua sắm
+            </p>
+          </div>
+          <div>
+            <h3 class="text-[19px] pb-2">Theo dõi VEcommerce tại</h3>
+            <div class="text-[14px] flex flex-col gap-y-2">
+              <a href="" class=""
+                ><i class="fa-brands fa-facebook mr-5"></i>Facebook</a
+              >
+              <a href="" class=""
+                ><i class="fa-brands fa-tiktok mr-5"></i>Tiktok</a
+              >
+              <a href="" class=""
+                ><i class="fa-brands fa-youtube mr-5"></i>Youtube</a
+              >
+              <a href="" class=""
+                ><i class="fa-brands fa-instagram mr-5"></i>Instagram</a
+              >
+            </div>
+          </div>
+          <div>
+            <h3 class="text-[19px] pb-2">Chính sách mua hàng</h3>
+            <ul class="text-[14px] flex flex-col gap-y-2">
+              <li><a href="">Đổi trả sản phẩm</a></li>
+              <li><a href="">Chính sách bảo hành-đổi trả</a></li>
+              <li><a href="">Giao hàng-lắp đặt</a></li>
+              <li><a href="">Chính sách thành viên</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-[19px] pb-1">Bảng tin</h3>
+            <p class="text-justify text-[14px] pb-2">
+              Đăng ký để nhận nhiều ưu đãi
+            </p>
+            <form action="">
+              <input
+                class="block text-black px-2 py-1 w-[85%] text-[14px] border border-gray-400 outline-none rounded-xl mb-3"
+                type="email"
+                placeholder="Nhập email tại đây"
+              />
+              <button
+                type="submit"
+                class="text-[14px] bg-main-color px-4 py-1 rounded-sm hover:bg-secondary-color dark:bg-[#393A3B] dark:hover:bg-[#18191a]"
+              >
+                Đăng ký
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

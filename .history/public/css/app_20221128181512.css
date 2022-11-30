@@ -1,0 +1,77 @@
+.darkmode-input:checked + div .darkmode-spinner {
+    transform: translateX(60px);
+}
+
+.darkmode-input:checked + div {
+    background-color: rgb(163, 96, 226);
+}
+
+.darkmode-input:checked + div .darkmode-spinner {
+    background-color: white;
+}
+
+.product-slider {
+    position: relative;
+}
+
+.slick-initialized .slick-slide {
+    margin: 0px 12px;
+}
+
+.product-slider .slick-prev {
+   
+    position: absolute; 
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.product-slider .slick-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.product-slider button {
+    width: 35px;
+    height: 35px;
+    background-color: #dfe6e9;
+    font-size: 22px;
+}
+
+.rating-slider {
+    position: relative;
+}
+
+
+.rating-slider .slick-prev {
+   
+    position: absolute; 
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.rating-slider .slick-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+.rating-slider button {
+    width: 35px;
+    height: 35px;
+    border-radius: 100rem;
+    /* box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); */
+    background-color: gray;
+    font-size: 22px;
+}
+
+
+
